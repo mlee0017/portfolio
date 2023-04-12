@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const commentController = require('../controllers/commentController')
+const commentController = require('../controllers/commentCtrl')
 const { authorize, confirmUserAccess } = require('../middleware/authMid')
 router.get('/seed', commentController.seed)
 router.get('/', commentController.index)

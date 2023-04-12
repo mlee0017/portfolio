@@ -6,7 +6,6 @@ import EditComment from './pages/comments/Edit';
 import IndexComment from './pages/comments/Index';
 import NewComment from './pages/comments/New';
 import ShowComment from './pages/comments/Show';
-
 import Register from './pages/users/Register';
 import Login from './pages/users/Login';
 import Navbar from './components/Navbar';
