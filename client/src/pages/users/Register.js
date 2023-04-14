@@ -27,7 +27,7 @@ function Register({ setUser }) {
         navigate('/memo')
     }
     return ( 
-        <div className="user-auth">
+        <div className="mx-auto" style={{width: 200}}>
             <h1>Register</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>

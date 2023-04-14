@@ -8,14 +8,14 @@ function Navbar({ user, setUser }) {
 
   return (
     <div className="nav justify-content-end">
-    <ul className="user-auth">
+    <ul className="nav flex-row">
       {user ? 
         <>
-          <li style={{ color: "black" }}>Welcome {user}!</li>
-          <li className="home-nav">
+          <li className="nav-item" style={{ color: "black" }}>Welcome {user}!</li>
+          <li className="nav-item">
             <Link to="/home" style={{ textDecoration: 'none' }}>home</Link>
           </li>
-          <li className="about-nav">
+          <li className="nav-item">
             <Link to="/about" style={{ textDecoration: 'none' }}>about</Link>
           </li>
           
@@ -25,10 +25,11 @@ function Navbar({ user, setUser }) {
         </>
        : 
         <>
-          <li className="nav">
+          <li className="nav-item">
             <Link to="/login" style={{ textDecoration: 'none' }}>Login</Link>
           </li>
-          <li>
+          <br /> 
+          <li className="nav-item">
             <Link to="/register" style={{ textDecoration: 'none' }}>Register</Link>
           </li>
         </>
