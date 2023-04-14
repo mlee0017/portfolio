@@ -7,15 +7,20 @@ function Navbar({ user, setUser }) {
   };
 
   return (
+    <div className="nav justify-content-end">
     <ul className="user-auth">
       {user ? 
         <>
           <li style={{ color: "black" }}>Welcome {user}!</li>
-          <li className="memo-nav">
-            <Link to="/memo" style={{ textDecoration: 'none' }}>Memo</Link>
+          <li className="home-nav">
+            <Link to="/home" style={{ textDecoration: 'none' }}>home</Link>
           </li>
+          <li className="about-nav">
+            <Link to="/about" style={{ textDecoration: 'none' }}>about</Link>
+          </li>
+          
           <li onClick={logout}>
-            <Link to="/login" style={{ textDecoration: 'none' }}>Logout</Link>
+            <Link to="/login" style={{ textDecoration: 'none' }}>logout</Link>
           </li>
         </>
        : 
@@ -29,6 +34,7 @@ function Navbar({ user, setUser }) {
         </>
       }
     </ul>
+    </div>
   );
 }
 
