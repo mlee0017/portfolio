@@ -26,7 +26,7 @@ function Login({ setUser }) {
         navigate('/memo')
     }
     return ( 
-        <div className='user-auth'>
+        <div class="mx-auto" style={{width: 200}}>
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>

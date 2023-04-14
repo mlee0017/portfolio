@@ -4,6 +4,8 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 const PORT = 8080 
+const userRoutes = require('./routes/userRoutes')
+const authRoutes = require('./routes/authRoutes')
 const { authorize } = require('./middleware/authMid')
 const connectDB = require('./config/db')
 connectDB()
